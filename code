@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    printf("__________currency converter__________");
+    printf("\n1.dollar to indian");
+    printf("\n2.dollar to pound");
+    printf("\n3.dollar to Arabic dirham");
+    printf("\n4.dollar to Netherlands Antillean guilder");
+    printf("\n5.dollar to Bangladeshi taka ");
+    int choice;
+    float amount,converted;
+    printf("\nenter the amount in dollar =");
+    scanf("%f",&amount);
+    printf("enter your choice");
+    scanf("%d",&choice);
+    
+    switch(choice)
+    {
+        case 1: converted=amount*83;
+        printf("\nentered amount = %f \n the coverted amount =%f",amount,converted);
+        break;
+        case 2: converted=amount*0.784;
+        printf("\nentered amount = %f \n the coverted amount =%f",amount,converted);
+        break;
+        case 3: converted=amount*3.6740901;
+        printf("\nentered amount = %f \n the coverted amount =%f",amount,converted);
+        break;
+        case 4: converted=amount*1.785;
+        printf("\nentered amount = %f \n the coverted amount =%f",amount,converted);
+        break;
+        case 5: converted=amount*117.41500;
+        printf("\nentered amount = %f \n the coverted amount =%f",amount,converted);
+        break;
+        default:
+        printf("wrong input");
+        
+    }
+    
+
+
+    return 0;
+}
